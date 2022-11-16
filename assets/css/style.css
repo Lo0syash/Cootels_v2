@@ -56,11 +56,11 @@ html, body{
 }
 
 .anchor{
+    display: none;
     width: 60px;
     height: 60px;
     background-color: #0B265A;
     border-radius: 50%;
-    display: flex;
     justify-content: center;
     align-items: center;
 
