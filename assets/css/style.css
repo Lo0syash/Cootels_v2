@@ -1,0 +1,431 @@
+/* ================================ GLOBAL ================================ */
+/* ================================ GLOBAL ================================ */
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    width: 156px;
+    height: 51px;
+    border-radius: 4px;
+    background-color: #0e1734;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+
+    transition: .5s;
+}
+
+.btn:hover{
+    box-shadow: 3px 4px 5px #1d2d65;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #192252;
+    line-height: 150%;
+    letter-spacing: -1%;
+    font-size: 36px;
+}
+
+.paragraph{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #848FAC;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.anchor{
+    width: 60px;
+    height: 60px;
+    background-color: #0B265A;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+/* ================================ HEADER TOP ================================ */
+/* ================================ HEADER TOP ================================ */
+
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 27px;
+}
+
+.header__nav-list{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header__logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #192252;
+}
+
+.header__nav-link{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #192252;
+}
+
+.btn__header{
+    width: 121px;
+    height: 47px;
+}
+
+/* ================================ HEADER BODY ================================ */
+/* ================================ HEADER BODY ================================ */
+
+.header__body-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__paragraph{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.header__image{
+    margin-top: 80px;
+}
+
+/* ================================ ABOUT ================================ */
+/* ================================ ABOUT ================================ */
+
+.about__inner{
+    display: flex;
+    align-items: center;
+    gap: 126px;
+}
+
+.about__paragraph-top{
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.about__paragraph-bottom{
+    margin-bottom: 32px;
+}
+
+/* ================================ BENEFIT ================================ */
+/* ================================ BENEFIT ================================ */
+
+.main__benefit{
+    padding: 80px 0;
+}
+
+.main__benefit .container{
+    max-width: 1094px;
+}
+
+.benefit__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.benefit__paragraph{
+    margin-top: 24px;
+}
+
+/* ================================ RESERVATION ================================ */
+/* ================================ RESERVATION ================================ */
+
+.main__reservation{
+    padding: 80px 0;
+}
+
+.reservation__body{
+    margin-top: 88px;
+}
+
+.reservation__list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation__heading{
+    display: grid;
+    place-items: center;
+}
+
+.reservation__heading .reservation__paragraph{
+    text-align: center;
+}
+
+.reservation__paragraph{
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.reservation__title{
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.reservation__list__btn-box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.reservation__list__btn{
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #424F7B;
+}
+
+/* ================================ ROOM ================================ */
+/* ================================ ROOM ================================ */
+
+.main__room{
+    padding: 80px 0;
+}
+
+.room__subtitle{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #424F7B;
+}
+
+.room__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room__title{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.room__btn-box{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.room__btn{
+    width: 148px;
+}
+
+.room__btn-more{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0e1734;
+}
+
+.room__list{
+    display: grid;
+    gap: 24px;
+}
+
+.room__list-item{
+    width: 588px;
+    height: 100px;
+    border-radius: 4px;
+    display: grid;
+}
+
+.room__list-item.active{
+    width: 588px;
+}
+
+.room__list-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color:#424F7B;
+    margin-left: 36px;
+}
+
+.room__list-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room__list-body{
+    display: none;
+}
+
+.room__list-body.active{
+    display: block;
+}
+
+.room__list-item .room__paragraph{
+    margin-left: 36px;
+}
+
+.btn__list{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFECE2;
+    margin-right: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn__list.active{
+    background-color: #FF620A;
+}
+
+.btn__list.active:hover{
+    transform: rotate(180deg);
+}
+
+.room__image.active{
+    display: none;
+}
+
+/* ================================ TESTIMONI ================================ */
+/* ================================ TESTIMONI ================================ */
+
+.main__testimoni{
+    padding: 80px 0;
+}
+
+.testimoni__inner{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.image__testimoni{
+    margin-top: 62px;
+    margin-bottom: 44px;
+}
+
+.testimoni__name{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #192252;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.testimoni__pages{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ellipse__pages{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(250, 176, 71, .35);
+    cursor: pointer;
+}
+
+.ellipse__pages.active{
+    width: 12px;
+    height: 12px;
+    background-color: #FAB047;
+}
+
+/* ================================ FOOTER ================================ */
+/* ================================ FOOTER ================================ */
+
+.footer .container{
+    background-color: #0B265A;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 184px 120px 120px;
+}
+
+.footer__title{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.footer__paragraph{
+    font-size: 16px;
+    color: #D9DBDE;
+    line-height: 28px;
+}
+
+.footer__network-box{
+    margin-top: 36px;
+    display: flex;
+    gap: 24px;
+}
+
+.footer__body{
+    display: flex;
+    gap: 100px;
+}
+
+.footer__body .footer__body-col:last-child{
+    padding-left: 41px;
+}
+
+.footer__body-title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+.footer__body-list{
+    display: grid;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.footer__item-link{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #D9DBDE;
+    font-size: 16px;
+}
