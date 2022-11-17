@@ -761,6 +761,10 @@ html, body{
         text-align: center;
     }
 
+    .reservation__heading .reservation__paragraph{
+        font-size: 12px;
+    }
+
     .reservation__list-item{
         display: grid;
         place-items: center;
@@ -781,6 +785,10 @@ html, body{
 
     .main__testimoni{
         padding-bottom: 60px;
+    }
+
+    .testimoni__paragraph{
+        font-size: 14px;
     }
 
     .footer__inner{
