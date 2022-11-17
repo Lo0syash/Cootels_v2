@@ -272,10 +272,6 @@ html, body{
     display: grid;
 }
 
-.room__list-item.active{
-    width: 588px;
-}
-
 .room__list-title{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -441,6 +437,24 @@ html, body{
         font-size: 30px;
     }
 }
+
+@media (max-width:1000px) {
+    .title{
+        font-size: 25px;
+    }
+
+    .paragraph{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:750px) {
+    .btn{
+        width: 125px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
 /* ================================ 1200 ================================ */
 /* ================================ 1200 ================================ */
 
@@ -480,10 +494,6 @@ html, body{
     .reservation__list-item .reservation__paragraph{
         font-size: 14px;
     }
-    
-    .reservation__list-item .reservation__list__btn{
-        font-size: 17px;
-    }
 
     .footer__inner{
         padding: 100px 144px 100px 100px;
@@ -495,5 +505,292 @@ html, body{
 
     .footer__image{
         width: 28px;
+    }
+}
+
+/* ================================ 1000 ================================ */
+/* ================================ 1000 ================================ */
+
+@media (max-width:1000px) {
+    .header__image{
+        width: 300px;
+    }
+
+    .about__image{
+        width: 250px;
+    }
+
+    .about__inner{
+        gap: 50px;
+    }
+
+    .about__inner .paragraph{
+        font-size: 12px;
+    }
+
+    .container{
+        max-width: 750px;
+    }
+
+    .main__benefit .container{
+        max-width: 750px;
+    }
+
+    .benefit__image{
+        width: 250px;
+    }
+    
+    .reservation__image{
+        width: 240px;
+    }
+    
+    .reservation__list-item .reservation__title{
+        font-size: 20px;
+    }
+    
+    .reservation__list-item .reservation__paragraph{
+        font-size: 12px;
+    }
+
+    .room__subtitle{
+        font-size: 12px;
+    }
+
+    .room__content .title{
+        font-size: 20px;
+    }
+
+    .room__content .paragraph{
+        font-size: 14px;
+    }
+
+    .room__btn-box{
+        gap: 10px;
+    }
+
+    .room__btn-box .room__btn{
+        font-size: 12px;
+    }
+
+    .room__btn-box .room__btn-more{
+        font-size: 14px;
+    }
+
+    .room__list-item{
+        width: 450px;
+    }
+
+    .room__list-item .room__list-title{
+        font-size: 20px;
+    }
+
+    .room__list-item .room__paragraph{
+        font-size: 14px;
+    }
+
+    .btn__list{
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer__inner{
+        padding: 100px 80px 100px 80px;
+    }
+
+    .footer__body{
+        gap: 15px;
+    }
+
+    .footer__title{
+        font-size: 18px;
+    }
+
+    .footer__paragraph{
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .footer__body-title{
+        font-size: 16px;
+    }
+
+    .footer__item-link{
+        font-size: 14px;
+    }
+
+    .footer__network-box{
+        margin-top: 25px;
+    }
+
+    .footer__image{
+        width: 25px;
+    }
+}
+
+/* ================================ 750 ================================ */
+/* ================================ 750 ================================ */
+
+@media (max-width:750px) {
+
+    .header__paragraph{
+        font-size: 12px;
+    } 
+
+    .header__title{
+        font-size: 20px;
+    }
+
+    .about__image{
+        width: 200px;
+    }
+
+    .about__inner{
+        gap: 50px;
+    }
+
+    .about__inner .about__title{
+        font-size: 19px;
+    }
+
+    .container{
+        max-width: 600px;
+    }
+
+    .main__benefit .container{
+        max-width: 600px;
+    }
+
+    .benefit__content .benefit__paragraph{
+        font-size: 12px;
+    }
+
+    .benefit__image{
+        width: 200px;
+    }
+    
+    .reservation__image{
+        width: 188px;
+    }
+
+    .room__content .title{
+        font-size: 18px;
+    }
+
+    .room__content .paragraph{
+        font-size: 12px;
+    }
+
+    .room__btn-box .room__btn{
+        font-size: 12px;
+    }
+
+    .room__btn-box .room__btn-more{
+        font-size: 13px;
+    }
+
+    .room__list-item{
+        width: 350px;
+    }
+
+    .room__list{
+        gap: 18px;
+    }
+
+    .room__list-item .room__list-title{
+        font-size: 18px;
+    }
+
+    .room__list-item .room__paragraph{
+        font-size: 10px;
+    }
+
+    .footer__inner{
+        padding: 100px 30px 100px 30px;
+    }
+}
+
+/* ================================ 750 ================================ */
+/* ================================ 750 ================================ */
+
+@media (max-width:600px) {
+    .container{
+        max-width: 450px;
+    }
+
+    .header__body-inner{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header__content{
+        display: grid;
+        place-items: center;
+    }
+
+    .about__inner{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about__content{
+        display: grid;
+        place-items: center;
+    }
+
+    .benefit__blocks{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+    
+    .benefit__block{
+        display: grid;
+        place-items: center;
+    }
+
+    .benefit__image{
+        display: none;
+    }
+
+    .reservation__list{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .reservation__list-item{
+        display: grid;
+        place-items: center;
+    }
+
+    .room__inner{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .room__content{
+        text-align: center;
+    }
+
+    .footer__inner{
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        gap: 35px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .footer__body{
+        display: grid;
+        gap: 50px;
+    }
+
+    .footer__body .footer__body-col:last-child{
+        padding-left: 0;
     }
 }
