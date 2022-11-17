@@ -169,10 +169,6 @@ html, body{
 /* ================================ RESERVATION ================================ */
 /* ================================ RESERVATION ================================ */
 
-.main__reservation{
-    padding: 80px 0;
-}
-
 .reservation__body{
     margin-top: 88px;
 }
@@ -326,7 +322,7 @@ html, body{
 /* ================================ TESTIMONI ================================ */
 
 .main__testimoni{
-    padding: 80px 0;
+    padding-bottom: 80px;
 }
 
 .testimoni__inner{
@@ -739,6 +735,10 @@ html, body{
         place-items: center;
     }
 
+    .main__benefit{
+        padding: 60px 0;
+    }
+
     .benefit__blocks{
         display: grid;
         place-items: center;
@@ -766,6 +766,10 @@ html, body{
         place-items: center;
     }
 
+    .main__room{
+        padding: 60px 0;
+    }
+
     .room__inner{
         flex-wrap: wrap;
         justify-content: center;
@@ -773,6 +777,10 @@ html, body{
 
     .room__content{
         text-align: center;
+    }
+
+    .main__testimoni{
+        padding-bottom: 60px;
     }
 
     .footer__inner{
