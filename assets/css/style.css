@@ -43,7 +43,6 @@ html, body{
     font-weight: 600;
     color: #192252;
     line-height: 150%;
-    letter-spacing: -1%;
     font-size: 36px;
 }
 
@@ -63,11 +62,12 @@ html, body{
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
     position: fixed;
     right: 50px;
     bottom: 50px;
 }
+
 
 .anchor.active{
     display: flex;
@@ -432,4 +432,68 @@ html, body{
     font-weight: 400;
     color: #D9DBDE;
     font-size: 16px;
+}
+
+/* ================================ MEDIA ================================ */
+/* ================================ MEDIA ================================ */
+@media (max-width:1200px) {
+    .title{
+        font-size: 30px;
+    }
+}
+/* ================================ 1200 ================================ */
+/* ================================ 1200 ================================ */
+
+@media (max-width:1200px) {
+    .header__image{
+        width: 500px;
+    }
+
+    .about__image{
+        width: 300px;
+    }
+
+    .container{
+        max-width: 1000px;
+    }
+
+    .main__benefit .container{
+        max-width: 1000px;
+    }
+
+    .benefit__image{
+        width: 325px;
+    }
+    
+    .reservation__list{
+        gap: 15px;
+    }
+    
+    .reservation__image{
+        width: 322px;
+    }
+    
+    .reservation__list-item .reservation__title{
+        font-size: 22px;
+    }
+    
+    .reservation__list-item .reservation__paragraph{
+        font-size: 14px;
+    }
+    
+    .reservation__list-item .reservation__list__btn{
+        font-size: 17px;
+    }
+
+    .footer__inner{
+        padding: 100px 144px 100px 100px;
+    }
+
+    .footer__body{
+        gap: 50px;
+    }
+
+    .footer__image{
+        width: 28px;
+    }
 }

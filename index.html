@@ -11,9 +11,9 @@
 </head>
 <body>
     <div class="wrapper">
-        <a href="#header" class="anchor" id="anchor">
-            <img class="anchor__images" src="assets/images/Arrow - Down 3.png" alt="arrow">
-        </a>
+        <div class="anchor" id="anchor">
+            <img class="anchor__images" src="assets/images/Arrow-Down3.png" alt="arrow">
+        </div>
         <header class="header" id="header">
             <div class="header__top">
                 <div class="container">
@@ -55,8 +55,8 @@
                                 <a href="#" class="btn__header__body btn">Reservation</a>
                             </div>
                         </div>
-                        <div class="header__image">
-                            <img src="assets/images/hero-image.png" alt="house">
+                        <div class="header__image-box">
+                            <img class="header__image" src="assets/images/hero-image.png" alt="house">
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
             <section class="main__about main__about">
                 <div class="container">
                     <div class="about__inner">
-                        <img class="about__image" src="assets/images/image 13.png" alt="house and dog">
+                        <img class="about__image" src="assets/images/image13.png" alt="house and dog">
                         <div class="about__content">
                             <div class="about__title title">
                                 Cozy and Down to Earth Cootage<br>
@@ -103,10 +103,10 @@
                                         chance for you to make new friends or even a lover.
                                     </p>
                                 </div>
-                                <img class="benefit__image" src="assets/images/image 21.png" alt="">
+                                <img class="benefit__image" src="assets/images/image21.png" alt="">
                             </div>
                             <div class="benefit__block">
-                                <img class="benefit__images" src="assets/images/image 18.png" alt="">
+                                <img class="benefit__images" src="assets/images/image18.png" alt="">
                                 <div class="benefit__content">
                                     <div class="benefit__title title">
                                         100% Organic Food
@@ -138,7 +138,7 @@
                         <div class="reservation__body">
                             <ul class="reservation__list">
                                 <li class="reservation__list-item">
-                                    <img class="reservation__image" src="assets/images/image 11.png" alt="">
+                                    <img class="reservation__image" src="assets/images/image11.png" alt="">
                                     <div class="reservation__title">Single Room</div>
                                     <p class="reservation__paragraph paragraph">
                                         Best for a brave lone wolf who need comfort<br>
@@ -153,7 +153,7 @@
                                     </div>
                                 </li>
                                 <li class="reservation__list-item">
-                                    <img class="reservation__image" src="assets/images/image 10.png" alt="">
+                                    <img class="reservation__image" src="assets/images/image10.png" alt="">
                                     <div class="reservation__title">Double Room</div>
                                     <p class="reservation__paragraph paragraph">
                                         Best for couple, seek happiness in intimacy<br>
@@ -168,7 +168,7 @@
                                     </div>
                                 </li>
                                 <li class="reservation__list-item">
-                                    <img class="reservation__image" src="assets/images/ian-keefe-OgcJIKRnRC8-unsplash 1.png" alt="">
+                                    <img class="reservation__image" src="assets/images/ian-keefe-OgcJIKRnRC8-unsplash1.png" alt="">
                                     <div class="reservation__title">Cootage</div>
                                     <p class="reservation__paragraph paragraph">
                                         Best for family or group. One cootage can fit<br>
@@ -208,7 +208,7 @@
                                         <div class="room__list-top">
                                             <div class="room__list-title">1. Choose a room and date</div>
                                             <div class="btn__list">
-                                                <img class="room__image" src="assets/images/Arrow - Down 2.png" alt="arrow">
+                                                <img class="room__image" src="assets/images/Arrow-Down2.png" alt="arrow">
                                             </div>
                                         </div>
                                     </li>
@@ -216,8 +216,8 @@
                                         <div class="room__list-top">
                                             <div class="room__list-title">2. Check for room availability</div>
                                             <div class="btn__list active">
-                                                <img class="room__image active" src="assets/images/Arrow - Down 2.png" alt="arrow">
-                                                <img class="room__image" src="assets/images/Arrow - Down 3.png" alt="arrow">
+                                                <img class="room__image active" src="assets/images/Arrow-Down2.png" alt="arrow">
+                                                <img class="room__image" src="assets/images/Arrow-Down3.png" alt="arrow">
                                             </div>
                                         </div>
                                         <div class="room__list-body active">
@@ -231,7 +231,7 @@
                                         <div class="room__list-top">
                                             <div class="room__list-title">3. Enjoy your room</div>
                                             <div class="btn__list">
-                                                <img class="room__image" src="assets/images/Arrow - Down 2.png" alt="arrow">
+                                                <img class="room__image" src="assets/images/Arrow-Down2.png" alt="arrow">
                                             </div>
                                         </div>
                                     </li>
@@ -275,10 +275,10 @@
                                 <img src="assets/images/twitter.png" alt="twitter" class="footer__image">
                             </a>
                             <a href="#" class="footer__network">
-                                <img src="assets/images/instagram-logo.png" alt="instagram" class="footer__network">
+                                <img src="assets/images/instagram-logo.png" alt="instagram" class="footer__image">
                             </a>
                             <a href="#" class="footer__network">
-                                <img src="assets/images/facebook.png" alt="facebook" class="footer__network">
+                                <img src="assets/images/facebook.png" alt="facebook" class="footer__image">
                             </a>
                         </div>
                     </div>
@@ -330,21 +330,7 @@
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="assets/script/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js">
-        $(document).ready(function(){
-    $(window).on('scroll', function(){
-        let offset = $('.header').offset().top;
-        let anchor = $('.anchor').offset().top;
-        if($(this).scrollTop() >= offset){
-            anchor.addClass('active')
-        }
-        else{
-            anchor.removeClass('active')
-        }
-    })
-})
-    </script>
-
+    <script src="assets/script/jquery-3.6.1.min.js"></script>
+    <script src="assets/script/main.js"></script>
 </body> 
 </html>
