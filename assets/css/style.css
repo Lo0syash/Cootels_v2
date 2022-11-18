@@ -730,6 +730,10 @@ html, body{
         background-color: #000;
     }
 
+    .header__top-inner{
+        padding: 0 20px;
+    }
+
 
     .header__nav-list{
         position: fixed;
