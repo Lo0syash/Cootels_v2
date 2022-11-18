@@ -28,3 +28,18 @@ $(document).ready(function(){
     })
 })
 
+//burger
+//burger
+
+const header__nav = document.querySelector('.header__nav-list');
+const header__btn = document.querySelector('.header__btn-box');
+
+const nav_link = document.querySelector('.header__nav-link').addEventListener('click', ()=>{
+    header__nav.classList.remove('active')
+    header__btn.classList.remove('active')
+})
+
+const burger = document.querySelector('.burger').addEventListener('click', ()=>{
+    header__nav.classList.toggle('active')
+    header__btn.classList.toggle('active')
+})

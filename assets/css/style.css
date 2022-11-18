@@ -16,6 +16,10 @@ html, body{
     margin: 0 auto;
 }
 
+.burger{
+    display: none;
+}
+
 .btn{
     width: 156px;
     height: 51px;
@@ -711,6 +715,58 @@ html, body{
 @media (max-width:600px) {
     .container{
         max-width: 450px;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .burger span{
+        display: block;
+        margin: 4px auto;
+        width:25px;
+        height: 3.5px;
+        border-radius: 25%;
+        background-color: #000;
+    }
+
+
+    .header__nav-list{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .header__nav-item{
+        margin: 15px auto;
+    }
+
+    .header__nav-list.active{
+        left: 0;
+    }
+
+    .header__btn-box{
+        position: fixed;
+        left: -100%;
+        top: 205px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        transition: .3s;
+        display: grid;
+        place-content: center;
+        padding-bottom: 100%;
+    }
+
+    .header__btn-box.active{
+        left: 0;
     }
 
     .header__body-inner{
