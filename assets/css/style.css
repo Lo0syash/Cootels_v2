@@ -717,8 +717,13 @@ html, body{
         max-width: 450px;
     }
 
+    .header__logo{
+        margin-left: 20px;
+    }
+
     .burger{
         display: block;
+        margin-right: 20px;
     }
 
     .burger span{
@@ -728,10 +733,6 @@ html, body{
         height: 3.5px;
         border-radius: 25%;
         background-color: #000;
-    }
-
-    .header__top-inner{
-        padding: 0 30px;
     }
 
 
