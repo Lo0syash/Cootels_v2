@@ -287,6 +287,7 @@ html, body{
 
 .room__list-body{
     display: none;
+    transition: .8s;
 }
 
 .room__list-body.active{
@@ -307,20 +308,70 @@ html, body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: .5s;
+    transition: .8s;
 }
 
 .btn__list.active{
     background-color: #FF620A;
+    transform: rotate(180deg);
 }
 
-.btn__list.active:hover{
+/* .btn__list.active:hover{
     transform: rotate(180deg);
+} */
+/*
+.list__color-bck:hover{
+    transform: rotate(180deg);
+} */
+
+.list__color-bck.active{
+    background-color: #FF620A;
 }
 
 .room__image.active{
     display: none;
 }
+
+.first__list-close.active{
+    display: block;
+}
+
+.first__list-body.active,
+.second__list-body.active,
+.third__list-body.active{
+    display: block;
+}
+
+.first__list-body{
+    transition: all 1s;
+}
+
+
+.first__arrow-close,
+.second__arrow-close,
+.third__arrow-close{
+    display: none;
+}
+
+.first__arrow-close.active,
+.second__arrow-close.active,
+.third__arrow-close.active{
+    display: block;
+}
+
+.first__arrow-open,
+.second__arrow-open,
+.third__arrow-open{
+    display: block;
+}
+
+.first__arrow-open.active,
+.second__arrow-open.active,
+.third__arrow-open.active{
+    display: none;
+}
+
+
 
 /* ================================ TESTIMONI ================================ */
 /* ================================ TESTIMONI ================================ */
