@@ -42,6 +42,7 @@ const nav_link = document.querySelector('.header__nav-link').addEventListener('c
 const burger = document.querySelector('.burger').addEventListener('click', ()=>{
     header__nav.classList.toggle('active')
     header__btn.classList.toggle('active')
+    document.querySelector('.body').classList.toggle('active')
 })
 
 

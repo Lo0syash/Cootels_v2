@@ -5,6 +5,10 @@ html, body{
     scroll-behavior: smooth;
 }
 
+.body.active{
+    overflow: hidden;
+}
+
 .wrapper{
     min-height: 100%;
     width: 100%;
